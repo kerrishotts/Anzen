@@ -1,12 +1,13 @@
 //Javascript Discussion Code
+//Database Stuff!
 class Comment {
 
-    constructor(when, name, text){
-        this.when=when;
-        this.name=name;
-        this.text=text;
+    constructor(when, name, text) {
+        this.when = when;
+        this.name = name;
+        this.text = text;
     }
-    pushToDatabase(){
+    pushToDatabase() {
         var data = JSON.stringify(this);
         var xhr = new XMLHttpRequest();
         xhr.withCredentials = true;
@@ -29,17 +30,17 @@ class Comment {
         //code from the database to extract the values//
         var data = null;
         var xhr = new XMLHttpRequest();
-        xhr.addEventListener("readystatechange", function() {
-        if (this.readyState === 4) {
-            var comments = JSON.parse(this.responseText).map(function(databaseComment){
-                return new Comment(
-                    databaseComment.when,
-                    databaseComment.name,
-                    databaseComment.text
-                );
-            });
-            cb(comments);
-        }
+        xhr.addEventListener("readystatechange", function () {
+            if (this.readyState === 4) {
+                var comments = JSON.parse(this.responseText).map(function (databaseComment) {
+                    return new Comment(
+                        databaseComment.when,
+                        databaseComment.name,
+                        databaseComment.text
+                    );
+                });
+                cb(comments);
+            }
         });
         xhr.open("GET", "https://discussions-a8ce.restdb.io/rest/comments");
         xhr.setRequestHeader("content-type", "application/json");
@@ -51,31 +52,31 @@ class Comment {
 
 }
 
-function displayComments(){
+function displayComments() {
     var commentListing = document.querySelector("#comments");
     commentListing.innerHTML = "";
 
-    for(var i=0; i<comments.length; i++){
-        let comment=comments[i];
+    for (var i = 0; i < comments.length; i++) {
+        let comment = comments[i];
         var p = document.createElement("p");
-        
-        p.textContent= comment.name +" - " + comment.text;
-        p.className="comment";
+
+        p.textContent = comment.name + " - " + comment.text;
+        p.className = "comment";
         commentListing.appendChild(p);
     }
 }
 
-function addComment(){
+function addComment() {
     var userComment = new Comment(
         new Date(),
         document.querySelector("#name").value,
         document.querySelector("#comment").value,
-     );
-     comments.push(userComment);
-     displayComments();
-     userComment.pushToDatabase();
+    );
+    comments.push(userComment);
+    displayComments();
+    userComment.pushToDatabase();
 }
-Comment.getCommentsFromDatabase(function (commentsFromDB){
+Comment.getCommentsFromDatabase(function (commentsFromDB) {
     comments = commentsFromDB;
     displayComments();
 })
