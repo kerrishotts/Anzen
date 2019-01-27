@@ -5,17 +5,26 @@
     color: rgb(255,255,255);
   }
   .parallax.p2 {
-    background: url() no-repeat fixed 50% 0;
-    background-size: 1800px;
+    background: url(./assets/home\ image.jpg) no-repeat fixed 50% 0;
+    background-size: 1300px;
+    height: 300px;
     color: rgb(255,255,255);
   }
   .parallax.p3 {
-    background: url() no-repeat fixed 70% 0;
-    background-size: 1800px;
+    background: url(./assets/information.jpg) no-repeat fixed 70% 0;
+    background-size: 1300px;
+    height: 300px;
     color: rgb(255,255,255);
   }
   .parallax.p4 {
-   background: url() no-repeat fixed 70% 0;
-    background-size: cover;
+   background: url(./assets/dam.jpg) no-repeat fixed 70% 0;
+    background-size: 1300px;
+    height: 300px;
     color: rgb(255,255,255);
   }
+  .parallax.p5 {
+    background: url(./assets/badenergy.jpg) no-repeat fixed 70% 0;
+     background-size: 1300px;
+     height: 300px;
+     color: rgb(255,255,255);
+   }
