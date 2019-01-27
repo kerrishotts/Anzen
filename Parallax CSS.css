@@ -1,30 +1,30 @@
 .parallax.p1 {
     background: url(./assets/Solar\ Panels.jpg) no-repeat fixed 50% 0;
-    background-size: 1300px;
+    background-size: cover;
     height: 300px;
     color: rgb(255,255,255);
   }
   .parallax.p2 {
     background: url(./assets/home\ image.jpg) no-repeat fixed 50% 0;
-    background-size: 1300px;
+    background-size: cover;
     height: 300px;
     color: rgb(255,255,255);
   }
   .parallax.p3 {
     background: url(./assets/information.jpg) no-repeat fixed 70% 0;
-    background-size: 1300px;
+    background-size: cover;
     height: 300px;
     color: rgb(255,255,255);
   }
   .parallax.p4 {
    background: url(./assets/dam.jpg) no-repeat fixed 70% 0;
-    background-size: 1300px;
+    background-size: cover;
     height: 300px;
     color: rgb(255,255,255);
   }
   .parallax.p5 {
     background: url(./assets/badenergy.jpg) no-repeat fixed 70% 0;
-     background-size: 1300px;
+     background-size: cover;
      height: 300px;
      color: rgb(255,255,255);
    }

@@ -1,7 +1,9 @@
 /*Anzen Discussion CSS*/
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Acme');
 /*header, navbar, and footer stuff that gets copied*/
 h1{
+    font-family: 'Acme', sans-serif;
     text-align: center;
     background-color: rgba(245, 245, 245, 0.575);
     margin: 0;
@@ -11,10 +13,10 @@ h1{
     h1 {
     background-color:rgb(127, 179, 214);
     padding: 20px 50px;
-    font-family: 'Raleway', sans-serif;
     font-display: white;
 }
 div.topofpage {
+    font-family: 'Raleway', sans-serif;
     background-color: rgb(127, 179, 214);
     width: 100%;
     -webkit-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.75);
@@ -95,4 +97,39 @@ h2{
     margin-right: 50px;
     margin-left: 50px;
     background-color: rgba(245, 245, 245, 0.575);
+}
+/*Information columns*/
+#solar{
+    text-align: center;
+    font-size: 16pt;
+    background-color: rgba(245, 245, 245, 0.575);
+}
+#wind{
+    text-align: center;
+    font-size: 16pt;
+    background-color: rgba(245, 245, 245, 0.575);
+}
+#water{
+    text-align: center;
+    font-size: 16pt;
+    background-color: rgba(245, 245, 245, 0.575);
+}
+div#informationWrap{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+div#informationWrap > div{
+    flex: 1 1 300px;
+    margin: 10px;
+}
+#arrow{
+    position: fixed;
+    right: 15px;
+    bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.719);
+    padding: 5px;
+    border-radius: 50%;
 }

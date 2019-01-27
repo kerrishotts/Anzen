@@ -60,6 +60,7 @@ div.topofpage {
     cursor: default;
     }
     footer {
+        text-align: left;
         width: 100%;
         padding-top: 20px;
         display: block;
@@ -71,6 +72,7 @@ div.topofpage {
         z-index: 9999999;
     }
       .footer-copyright {
+        text-align: left;
         font-weight: 300;
         overflow: hidden;
         height: 50px;
@@ -83,41 +85,39 @@ div.topofpage {
 body{
     background-image: url("./assets/sky.jpg");
     font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
 /* wesbite heading */
 h2{
     text-align: center;
     font-size: 22pt;
     background-color: rgba(245, 245, 245, 0.575);
-}
-
-/*other stuff*/
-.firstparagraph{
     text-align: center;
-    margin-bottom: 20px;
+}
+#team{
+    width: 800px;
+    height: 600px;
+}
+#instagram{
+    width: 70px;
+    height: 70px;
+}
+#facebook{
+    width: 90px;
+    height: 70px;
+}
+#twitter{
+    width: 70px;
+    height: 70px;
+}
+#aboutuspicture{
+    width: 1335px;
+    height: 300px;
+}
+#blurb{
     font-size: 16pt;
-    line-height: 35px;
     background-color: rgba(245, 245, 245, 0.575);
-}
-.comment{
-    margin: 30px;
-    padding: 20px;
-    border: 1.5px solid rgba(0, 204, 255, 0.418);
-    background-color: rgba(245, 245, 245, 0.575);
-}
-#addcomment{
-    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
     text-align: center;
-    font-size: 16pt;
-    line-height: 35px;
-}
-#post{
-    width: 80px;
-    height: 50px;
-    font-size: 16pt;
-}
-h3{
-    text-align: center;
-    font-size: 22pt;
-    background-color: rgba(245, 245, 245, 0.575);
 }
