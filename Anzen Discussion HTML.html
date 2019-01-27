@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <div class="topofpage">
+    <header class="page-header">
+      <h1><img src="./assets/output-onlinepngtools.png" class="ANZEN"> ANZEN    </h1>
+    </header>
+    <div class="navbar">
+            <ul class="navbar-container">
+                <li class="nav-item"><a href="#section-1" class="left-underline nav-button" data-scroll>Home</a></li>
+                <li class="nav-item"><a href="#section-2" class="left-underline nav-button" data-scroll>Information</a></li>
+                <li class="nav-item"><a href="#section-3" class="left-underline nav-button" data-scroll>Our Goal</a></li>
+                <li class="nav-item"><a href="#section-4" class="left-underline nav-button" data-scroll>Impact</a></li>
+                <li class="nav-item"><a href="Anzen Discussion HTML.html" target= "_self" class="left-underline nav-button" data-scroll>Discussion</a></li>
+                <li class="nav-item"><a href="Anzen About Us HTML.html" target="_self" class="left-underline nav-button" data-scroll>About Us</a></li>
+            </ul>
+          </div>
+    </div>
+    <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Raleway');
+            h1{
+                text-align: center;
+                background-color: rgba(245, 245, 245, 0.575);
+                margin: 0;
+            }
+            body{
+                background-image: url("./assets/sky.jpg");
+                font-family: 'Raleway', sans-serif;
+            }
+            h2{
+                text-align: center;
+                font-size: 22pt;
+                background-color: rgba(245, 245, 245, 0.575);
+            }
+            .firstparagraph{
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 16pt;
+                line-height: 35px;
+                background-color: rgba(245, 245, 245, 0.575);
+            }
+            .comment{
+                margin: 30px;
+                padding: 20px;
+                border: 1.5px solid rgba(0, 204, 255, 0.418);
+                background-color: rgba(245, 245, 245, 0.575);
+            }
+            .ANZEN{
+                width: 80px}
+                h1 {
+                background-color:rgb(127, 179, 214);
+                padding: 20px 50px;
+                font-family: 'Raleway', sans-serif;
+                font-display: white;
+            }
+
+            div.topofpage {
+            background-color: rgb(127, 179, 214);
+            width: 100%;
+            -webkit-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow:    0px 2px 6px 0px rgba(50, 50, 50, 0.75);
+            box-shadow:         0px 2px 6px 0px rgba(50, 50, 50, 0.75);
+            z-index: 9999999;
+            }
+            div.navbar > ul.navbar-container {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+            margin: 0px;
+            padding-left: 1em;
+            padding-right: 1em;
+            overflow: hidden;
+            }
+            div.navbar > ul > li.nav-item {
+            background-color: rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease;
+            flex: 1 1 auto;
+            }
+            div.navbar > ul > li.active {
+            background-color: rgba(43, 16, 16, 0.18);
+            }
+            div.navbar > ul > li:hover {
+            background-color: rgba(0, 0, 0, 0.2);
+            }
+            a.nav-button {
+            text-decoration: none;
+            line-height: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: rgba(228, 241, 254, 1);
+            transition: all 0.5s ease;
+            }
+            a.nav-button:hover {
+            text-decoration: none;
+            
+            }
+            li.active > a.nav-button {
+            cursor: default;
+            }
+
+        </style>
+        <link rel="stylesheet" href="Parallax CSS.css">
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="Parallax JS.js"></script>
+    </head>
+    <body>
+        <h2>Discussion Page</h2>
+        <p class="firstparagraph">Welcome to our discussion page. <br> Here is a place to discuss the environmental problems created by nonrenewable resources. <br>Please feel free to talk about the future of renewable energy, <br> especially after reading our brief summaries on our home page. <br> Lastly, this is a froum for discussion on general environmental impacts.</p>
+        <div class="parallax p1" id="section-1"></div>
+        <h3>Comments</h3>
+
+        <div id="comments"></div>
+        <hr/>
+        <h3>Add your thoughts!</h3>
+
+        <form action="#">
+            <label>Name: <input type="text" id="name"/></label>
+            <label>Comment: <textarea id="comment"></textarea></label>
+            <button id="post">Post</button>
+        </form>
+        <script type="text/javascript" src="Anzen Discussion JS.js" defer></script>
+    </body>
+    <hr/>
+</html> 
